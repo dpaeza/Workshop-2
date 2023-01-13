@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alata', sans-serif;
+}
+body {
+    width: 100vw;
+}
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 0%);
+    --DarkGray: hsl(0, 0%, 55%);
+    --VeryDarkGray: hsl(0, 0%, 41%);
+}
+
+/* HEADER */
+
+header{
+    padding: 45px 130px;
+    background-image: url(./images/desktop/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 100%;
+    height: 512px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+h1{
+    font-weight: 400;
+    font-size: 30px;
+    color: var(--White);
+}
+
+.navList{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    font-size: 15px;
+    color: var(--White);
+}
+
+li:hover{
+    text-decoration: underline;
+}
+
+.celdHeader{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 45px;
+    font-weight: 300;
+    border: 2px solid hsl(0, 0%, 100%);
+    padding: 30px;
+    width: 512px;
+    height: 200px;
+    margin-top: 105px;
+    color: var(--White);
+}
+
+/* IMG SUPERPUESTAS */
+.imgSuper{
+    width: 100%;
+    height: 520px;
+    padding: 100px;;
+}
+
+.imgPurple{
+    width: 700px;
+    height: 400px;
+    position: absolute;
+    z-index: 1;
+}
+
+.containerP{
+    width: 500px;
+    height: 335px;
+    position: relative;
+    z-index: 2;
+    bottom: -150px;
+    right: -550px;
+    background-color: var(--White);
+    height: 300px;
+    width: 550px;
+    padding: 60px;
+}
+
+h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    color: var(--Black);
+    text-align: center;
+}
+
+.PimgB{
+    font-size: 15px;
+    color: var(--DarkGray);
+    margin-top: 30px;
+}
+
+
+/* OUR CREATIONS SECTION */
+.imgsContainer{
+    width: 100%;
+    height: auto;
+    padding: 100px;
+}
+
+.divOC{
+    display: flex;
+    justify-content: space-between;
+}
+
+h3{
+    font-size: 30px;
+    color: var(--Black);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+}
+
+.botonuno{
+    background-color: var(--White);
+    font-size: 15px;
+    color: var(--Black);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    width: 130px;
+    height: 35;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.botonuno:hover{
+    background-color: var(--Black);
+    color: var(--White);
+}
+
+.botondos{
+    display: none;
+    background-color: var(--White);
+    font-size: 15px;
+    color: var(--Black);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    width: 130px;
+    height: 35;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+/* cards */
+.card{
+    height: 450px;
+    width: 250px;
+    padding: 32px;
+    font-size: 30px;
+    color: var(--White);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+
+
+
+.cardsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.imgCarduno{
+    /* background: linear-gradient(0deg, rgba(255, 255, 255, 0.973), rgb(255, 255, 255)), url(.jpg), #ffffff; */
+    background-image: url(./images/desktop/image-deep-earth.jpg);
+    background-repeat: no-repeat;
+}
+
+.imgCarddos{
+    background-image: url(./images/desktop/image-night-arcade.jpg);
+    background-repeat: no-repeat;
+}
+
+.imgCardtres{
+    background-image: url(./images/desktop/image-soccer-team.jpg);
+    background-repeat: no-repeat;
+}
+
+.imgCardcuatro{
+    background-image: url(./images/desktop/image-grid.jpg);
+    background-repeat: no-repeat;
+}
+
+.imgCardcinco{
+    background-image: url(./images/desktop/image-from-above.jpg);
+    background-repeat: no-repeat;
+}
+
+.imgCardseis{
+    background-image: url(./images/desktop/image-pocket-borealis.jpg);
+    background-repeat: no-repeat;
+}
+
+.imgCardsiete{
+    background-image: url(./images/desktop/image-curiosity.jpg);
+    background-repeat: no-repeat;
+}
+
+.imgCardocho{
+    background-image: url(./images/desktop/image-fisheye.jpg);
+    background-repeat: no-repeat;
+}
+
+/* FOOTER */
+
+footer{
+    height: 130px;
+    width: 100%;
+    background-color: var(--Black);
+    color: var(--White);
+    padding: 10px 100px;
+}
+
+.divUnoFooter{
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconsContainer{
+    display: flex;
+    gap: 13px;
+}
+
+.icons{
+    width: 30px;
+    height: 30px;
+}
+
+.divDosFooter{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.aparecedos{
+    display: none;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 375px) {
+    .imgPurple{
+    width: 100%;
+    height: auto;
+    position: inherit;
+    }
+    .containerP{
+        height: 335px;
+        position: inherit;
+        height: 300px;
+        width: 100%;
+        padding: 20px;
+        z-index: 1;
+        text-align: center;
+    }
+    .imgSuper{
+    width: 100%;
+    height: auto;
+    padding: 70px 20px;;
+    }
+    .celdHeader{
+    width: 100%;
+    height: auto;
+    margin-top: 105px;
+    padding-left: 15px;
+    padding-right: 15px;
+    }
+    header{
+    padding: 20px;
+    background-image: url(./images/desktop/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 100%;
+    height: 512px;
+    }
+    .desaparece{
+        display: none;
+    }
+    .imgsContainer{
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    }
+    .botondos{
+        display: block;
+    }
+    .botonuno{
+        display: none;
+    }
+    .card{
+    height: 120px;
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 20px;
+    background-size: cover;
+    }
+.cardsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0px;
+    padding: 0px;
+    
+}
+.imgsContainer {
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer {
+    height: auto;
+    width: 100%;
+    background-color: var(--Black);
+    color: var(--White);
+    padding: 20px;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.divUnoFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.iconsContainer {
+    display: flex;
+    gap: 13px;
+}
+
+.icons {
+    width: 30px;
+    height: 30px;
+}
+
+.divDosFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.navfooter{
+    flex-direction: column;
+}
+.desaparecedos{
+    display: none;
+}
+.aparecedos{
+    display: block;
+    margin: 20px 0px;
+}
+
+}
